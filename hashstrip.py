@@ -19,6 +19,6 @@ for x in f:
 				result.write(line + "\n")
 				print(line)
 f.close()
-		
+#Passes the output file to John the ripper - later will add remote file transfer	
 os.system("john --wordlist=/usr/share/wordlists/rockyou.txt result.txt")
 exit()	
